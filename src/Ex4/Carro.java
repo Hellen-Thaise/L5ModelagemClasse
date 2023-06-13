@@ -1,23 +1,21 @@
 package Ex4;
 
 public class Carro {
-    private float consumo;
-    private float nivelCombustivel;
-    public Carro(float consumo) {
-        this.consumo= consumo;
-    }
-    public void andar(float distancia) {
-        float temp;
-        temp= distancia/this.consumo;
-        this.nivelCombustivel-= temp;
-    }
-    public float obterGasolina(){
-        return this.nivelCombustivel;
-    }
-    public void adicionarGasolina(float qtd) {
-        this.nivelCombustivel+= qtd;
+    Integer portasCarro;
+    String modeloCarro;
+    String marcaCarro;
+    double potenciaCarro;
+
+    public Carro(int portasCarro, String modeloCarro, String marcaCarro, double potenciaCarro) {
     }
 
-    public String toString() {
-        return"Carro [consumo="+ consumo+ ", nivelCombustivel="+ nivelCombustivel+ "]";}
+
+    public void ligarCarro() {
+        System.out.println("Carro ligado!");
+    }
+
+    public void Carro(String marcaCarro, String modeloCarro) {
+        System.out.println("O seu carro é: " + marcaCarro + " " + modeloCarro + " com motor " + potenciaCarro);
+        ligarCarro();
+    }
 }
